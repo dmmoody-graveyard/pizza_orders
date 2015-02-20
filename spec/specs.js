@@ -5,6 +5,12 @@ describe('Pizza', function() {
       newPizza.topping = 'Cheese';
       expect(newPizza.topping).to.equal('Cheese');
     });
+
+    it('takes "Pepperoni" as a topping and returns "Pepperoni"', function() {
+      var newPizza = Object.create(Pizza);
+      newPizza.topping = "Pepperoni";
+      expect(newPizza.topping).to.equal('Pepperoni');
+    });
   });
 
   describe('slices()', function() {
