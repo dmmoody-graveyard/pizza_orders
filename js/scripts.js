@@ -32,6 +32,7 @@ $(document).ready(function() {
     newOrder.topping = inputtedTopping;
     var slices = newOrder.slices(inputtedSize);
 
+    $('#order-result').show()
     $('#pizza-size').text(inputtedSize);
     $('#pizza-topping').text(newOrder.topping);
     $('#pizza-slices').text(slices);
