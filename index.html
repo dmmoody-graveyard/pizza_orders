@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Ordering</title>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Pizza Orders</h1>
+        </div>
+
+        <div class="jumbotron col-sm-4">
+            <h3>Place your order</h3>
+            <hr>
+            <p class="lead">Select your topping</p>
+            <select name="order" id="order" class="form-control">
+                <option value="Cheese">Cheese</option>
+                <option value="Pepperoni">Pepperoni</option>
+            </select>
+
+            <p class="lead">Select your size</p>
+            <select name="size" id="size" class="form-control">
+                <option value="10">Small - 10 inches</option>
+                <option value="12">Medium - 12 inches</option>
+                <option value="14">Large - 14 inches</option>
+            </select>
+
+            <button class="btn btn-default" type="submit">Order Now</button>
+        </div>
+
+        <div class="well col-sm-4 col-sm-offset-1">
+            <h3>Your Order</h3>
+        </div>
+
+    </div>
+</body>
+</html>
