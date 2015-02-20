@@ -17,24 +17,27 @@
         <div class="jumbotron col-sm-4">
             <h3>Place your order</h3>
             <hr>
-            <p class="lead">Select your topping</p>
-            <select name="order" id="order" class="form-control">
-                <option value="Cheese">Cheese</option>
-                <option value="Pepperoni">Pepperoni</option>
-            </select>
+            <form class="form-group" id="order">
+                <p class="lead">Select your topping</p>
+                <select name="topping" id="topping" class="form-control">
+                    <option value="Cheese">Cheese</option>
+                    <option value="Pepperoni">Pepperoni</option>
+                </select>
 
-            <p class="lead">Select your size</p>
-            <select name="size" id="size" class="form-control">
-                <option value="10">Small - 10 inches</option>
-                <option value="12">Medium - 12 inches</option>
-                <option value="14">Large - 14 inches</option>
-            </select>
+                <p class="lead">Select your size</p>
+                <select name="size" id="size" class="form-control">
+                    <option value="10">Small - 10 inches</option>
+                    <option value="12">Medium - 12 inches</option>
+                    <option value="14">Large - 14 inches</option>
+                </select>
 
-            <button class="btn btn-default" type="submit">Order Now</button>
+                <button class="btn btn-default" type="submit">Order Now</button>
+            </form>
         </div>
 
         <div class="well col-sm-4 col-sm-offset-1">
             <h3>Your Order</h3>
+            <p class="lead">Your <span id="pizza-size"></span> inch <span id="pizza-topping"></span> pizza will be ready in 30 minutes and has <span id="pizza-slices"></span> slices.</p>
         </div>
 
     </div>

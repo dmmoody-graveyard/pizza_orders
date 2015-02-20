@@ -19,3 +19,21 @@ var Pizza = {
     }
   }
 };
+
+$(document).ready(function() {
+  $('form#order').submit(function(event) {
+    event.preventDefault();
+
+    var inputtedTopping = $('select#topping').val();
+    var inputtedSize = parseInt($('select#size').val());
+
+    var newOrder = Object.create(Pizza);
+
+    newOrder.topping = inputtedTopping;
+    var slices = newOrder.slices(inputtedSize);
+
+    $('#pizza-size').text(inputtedSize);
+    $('#pizza-topping').text(newOrder.topping);
+    $('#pizza-slices').text(slices);
+  });
+});
