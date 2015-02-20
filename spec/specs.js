@@ -1,4 +1,12 @@
 describe('Pizza', function() {
+  describe('topping', function() {
+    it('takes "Cheese" as a topping and returns "Cheese"', function() {
+      var newPizza = Object.create(Pizza);
+      newPizza.topping = 'Cheese';
+      expect(newPizza.topping).to.equal('Cheese');
+    });
+  });
+  
   describe('slices()', function() {
     it('takes 12 and returns 8', function() {
       var newPizza = Object.create(Pizza);
