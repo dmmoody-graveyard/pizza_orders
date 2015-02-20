@@ -6,8 +6,13 @@ describe('Pizza', function() {
     });
 
     it('takes 10 and returns 6', function() {
-        var newPizza = Object.create(Pizza);
-        expect(newPizza.slices(10)).to.equal(6);
+      var newPizza = Object.create(Pizza);
+      expect(newPizza.slices(10)).to.equal(6);
+    });
+
+    it('takes 14 and returns 10', function() {
+      var newPizza = Object.create(Pizza);
+      expect(newPizza.slices(14)).to.equal(10);
     });
   });
 });
