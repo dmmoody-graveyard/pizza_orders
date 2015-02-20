@@ -5,7 +5,7 @@ var Pizza = {
     } else if (size === 10) {
       return 6;
     } else {
-        return;
+      return 10;
     }
   }
 };
