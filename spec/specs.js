@@ -43,5 +43,11 @@ describe('Pizza', function() {
       newPizza.topping = "Pepperoni";
       expect(newPizza.slices(10)).to.equal(4);
     });
+
+      it('takes 14 for a Pepperoni pizza and returns 8', function() {
+      var newPizza = Object.create(Pizza);
+      newPizza.topping = "Pepperoni";
+      expect(newPizza.slices(14)).to.equal(8);
+    });
   });
 });
