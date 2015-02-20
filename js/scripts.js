@@ -11,6 +11,8 @@ var Pizza = {
     } else {
       if (size === 12) {
         return 6;
+      } else if (size === 10) {
+        return 4;
       }
     }
   }
